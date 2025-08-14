@@ -102,7 +102,7 @@ def predict():
         patient_data.append({**data, 'Prediction': result, 'Prob Cad': prob})
 
         # Render ke halaman result terpisah jika ada, atau index
-        return render_template('result.html')  # Ganti ke 'index.html' jika tidak ada result terpisah
+        return render_template('result.html')  
 
     return render_template('index.html')
 
